@@ -144,7 +144,7 @@ const Projects = () => {
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20`}></div>
+                      <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20 rounded-xl`}></div>
                     </div>
                     
                     <div className="flex-grow min-w-0 overflow-hidden">
@@ -219,8 +219,8 @@ const Projects = () => {
                           alt={project.title}
                           className="w-full h-48 sm:h-64 object-cover transition-transform duration-700 group-hover:scale-105"
                         />
-                        <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-60`}></div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-60 rounded-xl`}></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-xl"></div>
                         <div className="absolute bottom-4 left-4 right-4">
                           <h4 className="text-white text-2xl font-bold">{project.title}</h4>
                         </div>
