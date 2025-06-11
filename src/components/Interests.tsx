@@ -14,7 +14,7 @@ const interests = [
   {
     icon: Film,
     title: "Cinema",
-    description: "Grande fan di thriller psicologici, fantascienza e horror che stimolano la riflessione.",
+    description: "Grande fan di thriller psicologici, fantascienza e ultimamente anche horror che stimolano la riflessione.",
     image: "https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800",
     color: "from-purple-500 to-pink-500",
     hoverColor: "hover:from-purple-600 hover:to-pink-600"
@@ -22,7 +22,7 @@ const interests = [
   {
     icon: Gamepad2,
     title: "Videogiochi",
-    description: "Mi immergo nel mondo dei videogiochi single-player, fonte d'ispirazione per la creatività tecnologica.",
+    description: "Mi immergo nel mondo dei videogiochi single-player, fonte d'ispirazione per la mia creatività.",
     image: "https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800",
     color: "from-blue-500 to-cyan-500",
     hoverColor: "hover:from-blue-600 hover:to-cyan-600"
