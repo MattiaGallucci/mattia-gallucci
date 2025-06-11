@@ -38,11 +38,11 @@ const projects = [
     period: "2024 - 2025",
     description: "Social network dedicato agli appassionati di musica, con articoli, recensioni, notizie e interviste.",
     fullDescription: "SwaGGed è una piattaforma social innovativa progettata specificamente per la comunità musicale. Il progetto presenta un'architettura complessa che include sistemi di raccomandazione personalizzati, gestione di contenuti multimediali, sistemi di rating e recensioni, e funzionalità social avanzate. L'applicazione è stata sviluppata seguendo principi di ingegneria del software moderni, con particolare attenzione alla scalabilità, sicurezza e user experience. Include funzionalità come streaming musicale, creazione di playlist collaborative, sistema di follow/follower e algoritmi di discovery musicale.",
-    tags: ["Social Network", "UX/UI", "Backend", "Music Tech"],
+    tags: ["Social Network", "UX/UI", "Backend", "Music Tech", "Streaming"],
     collaborators: ["Choaib Goumri"],
     image: "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-orange-500 to-red-500",
-    technologies: ["Java", "HTML5", "CSS3", "JavaScript", "MySQL"],
+    technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
     githubUrl: "https://github.com/MattiaGallucci/SwaGGed"
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     collaborators: ["Choaib Goumri"],
     image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-yellow-500 to-orange-500",
-    technologies: ["HTML5", "CSS3", "JavaScript", "MySQL"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
     githubUrl: "https://github.com/MattiaGallucci/GGJewelry"
   },
   {
@@ -69,7 +69,7 @@ const projects = [
     tags: ["Data Analysis", "Statistics", "Research", "Social Science", "Econometrics"],
     image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-blue-500 to-purple-500",
-    technologies: ["Excel"],
+    technologies: ["R", "Python", "SPSS", "Excel", "Tableau"],
     githubUrl: "https://github.com/MattiaGallucci/Progetto-CPSM"
   },
   {
@@ -82,7 +82,7 @@ const projects = [
     tags: ["Database", "SQL", "System Design", "Aviation", "Enterprise Systems"],
     image: "https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-teal-500 to-cyan-500",
-    technologies: ["PHP", "HTML5", "CSS3", "MySQL"],
+    technologies: ["PostgreSQL", "Java", "Spring Boot", "Hibernate", "Angular"],
     githubUrl: "https://github.com/MattiaGallucci/Progetto-BD"
   }
 ];
@@ -137,7 +137,7 @@ const Projects = () => {
                   onClick={() => toggleProject(project.id)}
                   className="cursor-pointer p-6 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-300"
                 >
-                  <div className="flex items-start space-x-4">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-3 sm:space-y-0">
                     <div className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden group">
                       <img 
                         src={project.image}
@@ -147,8 +147,8 @@ const Projects = () => {
                       <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20`}></div>
                     </div>
                     
-                    <div className="flex-grow min-w-0">
-                      <div className="flex items-start justify-between">
+                    <div className="flex-grow min-w-0 overflow-hidden">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between">
                         <div>
                           <div className="flex items-center space-x-2 mb-1">
                             <h3 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -176,12 +176,12 @@ const Projects = () => {
                               </div>
                             )}
                           </div>
-                          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base break-words">
                             {project.description}
                           </p>
                         </div>
                         
-                        <div className="flex items-center ml-4 space-x-2">
+                        <div className="flex items-center sm:ml-4 space-x-2 mt-3 sm:mt-0">
                           <a 
                             href={project.githubUrl} 
                             target="_blank" 
@@ -207,17 +207,17 @@ const Projects = () => {
                 {/* Expanded Content */}
                 <div className={`transition-all duration-500 ease-in-out ${
                   expandedProject === project.id 
-                    ? 'max-h-[800px] opacity-100' 
+                    ? 'max-h-[2000px] opacity-100' 
                     : 'max-h-0 opacity-0'
                 } overflow-hidden`}>
-                  <div className="px-6 pb-6 border-t border-gray-200 dark:border-gray-700">
-                    <div className="pt-6 space-y-6">
+                  <div className="px-4 sm:px-6 pb-6 border-t border-gray-200 dark:border-gray-700">
+                    <div className="pt-6 space-y-4 sm:space-y-6">
                       {/* Large Project Image */}
-                      <div className="relative overflow-hidden rounded-xl shadow-lg group">
+                      <div className="relative overflow-hidden rounded-xl shadow-lg group max-w-full">
                         <img 
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+                          className="w-full h-48 sm:h-64 object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-60`}></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -231,7 +231,7 @@ const Projects = () => {
                         <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
                           Descrizione Dettagliata
                         </h4>
-                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base break-words">
                           {project.fullDescription}
                         </p>
                       </div>
@@ -242,11 +242,11 @@ const Projects = () => {
                           <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
                             Tecnologie Utilizzate
                           </h4>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 max-w-full">
                             {project.technologies.map((tech, techIndex) => (
                               <span 
                                 key={techIndex}
-                                className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium hover:scale-105 transition-transform duration-300"
+                                className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 rounded-full text-xs sm:text-sm font-medium hover:scale-105 transition-transform duration-300 mb-1"
                               >
                                 {tech}
                               </span>
@@ -264,7 +264,7 @@ const Projects = () => {
                           {project.tags.map((tag, tagIndex) => (
                             <span 
                               key={tagIndex}
-                              className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:scale-105 transition-transform duration-300"
+                              className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs sm:text-sm font-medium hover:scale-105 transition-transform duration-300 mb-1"
                             >
                               {tag}
                             </span>
