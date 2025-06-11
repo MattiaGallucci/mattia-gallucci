@@ -15,7 +15,7 @@ const projects = [
     image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-purple-500 to-pink-500",
     technologies: ["Python", "Solidity", "TensorFlow", "Transformers", "Web3"],
-    githubUrl: "https://github.com/username/llm-smart-contracts"
+    githubUrl: "https://github.com/MattiaGallucci/tirocinio"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const projects = [
     image: "https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-green-500 to-blue-500",
     technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Flask"],
-    githubUrl: "https://github.com/username/goal-guru"
+    githubUrl: "https://github.com/MattiaGallucci/GoalGuru"
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const projects = [
     image: "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-orange-500 to-red-500",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
-    githubUrl: "https://github.com/username/swagged"
+    githubUrl: "https://github.com/MattiaGallucci/SwaGGed"
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const projects = [
     image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-yellow-500 to-orange-500",
     technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
-    githubUrl: "https://github.com/username/gg-jewelry"
+    githubUrl: "https://github.com/MattiaGallucci/GGJewelry"
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ const projects = [
     image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-blue-500 to-purple-500",
     technologies: ["R", "Python", "SPSS", "Excel", "Tableau"],
-    githubUrl: "https://github.com/username/crime-unemployment-analysis"
+    githubUrl: "https://github.com/MattiaGallucci/Progetto-CPSM"
   },
   {
     id: 6,
@@ -83,7 +83,7 @@ const projects = [
     image: "https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-teal-500 to-cyan-500",
     technologies: ["PostgreSQL", "Java", "Spring Boot", "Hibernate", "Angular"],
-    githubUrl: "https://github.com/username/airport-management-system"
+    githubUrl: "https://github.com/MattiaGallucci/Progetto-BD"
   }
 ];
 
