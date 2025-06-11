@@ -2,8 +2,47 @@ import React from 'react';
 import { useCursor } from '../hooks/useCursor';
 
 const CursorEffects = () => {
-  const { mousePosition, isHovering } = useCursor();
+  const { mousePosition, isHovering, isTouchDevice } = useCursor();
 
+  // Don't render the main cursor follower on touch devices
+  // but still render background effects for a subtle touch interaction
+  if (isTouchDevice) {
+    return (
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Touch ripple effect - appears briefly on touch */}
+        <div
+          className="absolute w-16 h-16 bg-white/10 dark:bg-white/5 rounded-full blur-md"
+          style={{
+            left: mousePosition.x - 32,
+            top: mousePosition.y - 32,
+            opacity: isHovering ? 0.6 : 0,
+            transform: `scale(${isHovering ? 1 : 0})`,
+            transition: 'transform 0.3s ease-out, opacity 0.3s ease-out',
+          }}
+        />
+        
+        {/* Background floating elements with smoother transitions for touch */}
+        <div
+          className="absolute w-32 h-32 bg-gradient-to-br from-blue-400/5 to-purple-400/5 dark:from-blue-400/3 dark:to-purple-400/3 rounded-full blur-xl"
+          style={{
+            left: mousePosition.x * 0.1 - 64,
+            top: mousePosition.y * 0.1 - 64,
+            transition: 'left 1s ease-out, top 1s ease-out',
+          }}
+        />
+        <div
+          className="absolute w-24 h-24 bg-gradient-to-br from-teal-400/5 to-cyan-400/5 dark:from-teal-400/3 dark:to-cyan-400/3 rounded-full blur-xl"
+          style={{
+            left: mousePosition.x * 0.05 - 48,
+            top: mousePosition.y * 0.05 - 48,
+            transition: 'left 1.4s ease-out, top 1.4s ease-out',
+          }}
+        />
+      </div>
+    );
+  }
+
+  // Desktop cursor effects
   return (
     <>
       {/* Main cursor follower */}
