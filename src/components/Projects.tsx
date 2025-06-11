@@ -38,11 +38,11 @@ const projects = [
     period: "2024 - 2025",
     description: "Social network dedicato agli appassionati di musica, con articoli, recensioni, notizie e interviste.",
     fullDescription: "SwaGGed è una piattaforma social innovativa progettata specificamente per la comunità musicale. Il progetto presenta un'architettura complessa che include sistemi di raccomandazione personalizzati, gestione di contenuti multimediali, sistemi di rating e recensioni, e funzionalità social avanzate. L'applicazione è stata sviluppata seguendo principi di ingegneria del software moderni, con particolare attenzione alla scalabilità, sicurezza e user experience. Include funzionalità come streaming musicale, creazione di playlist collaborative, sistema di follow/follower e algoritmi di discovery musicale.",
-    tags: ["Social Network", "UX/UI", "Backend", "Music Tech", "Streaming"],
+    tags: ["Social Network", "UX/UI", "Backend", "Music Tech"],
     collaborators: ["Choaib Goumri"],
     image: "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-orange-500 to-red-500",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
+    technologies: ["Java", "HTML5", "CSS3", "JavaScript", "MySQL"],
     githubUrl: "https://github.com/MattiaGallucci/SwaGGed"
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     collaborators: ["Choaib Goumri"],
     image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-yellow-500 to-orange-500",
-    technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "MySQL"],
     githubUrl: "https://github.com/MattiaGallucci/GGJewelry"
   },
   {
@@ -69,7 +69,7 @@ const projects = [
     tags: ["Data Analysis", "Statistics", "Research", "Social Science", "Econometrics"],
     image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-blue-500 to-purple-500",
-    technologies: ["R", "Python", "SPSS", "Excel", "Tableau"],
+    technologies: ["Excel"],
     githubUrl: "https://github.com/MattiaGallucci/Progetto-CPSM"
   },
   {
@@ -82,7 +82,7 @@ const projects = [
     tags: ["Database", "SQL", "System Design", "Aviation", "Enterprise Systems"],
     image: "https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-teal-500 to-cyan-500",
-    technologies: ["PostgreSQL", "Java", "Spring Boot", "Hibernate", "Angular"],
+    technologies: ["PHP", "HTML5", "CSS3", "MySQL"],
     githubUrl: "https://github.com/MattiaGallucci/Progetto-BD"
   }
 ];
