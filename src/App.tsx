@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
 import CursorEffects from './components/CursorEffects';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
