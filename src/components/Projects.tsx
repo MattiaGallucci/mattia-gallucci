@@ -42,7 +42,7 @@ const projects = [
     collaborators: ["Choaib Goumri"],
     image: "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-orange-500 to-red-500",
-    technologies: ["Java", "HTML5", "CSS3", "JavaScript", "MySQL"],
+    technologies: ["Java", "HTML5", "CSS3", "JavaScript", "AJAX", "MySQL"],
     githubUrl: "https://github.com/MattiaGallucci/SwaGGed"
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     collaborators: ["Choaib Goumri"],
     image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-yellow-500 to-orange-500",
-    technologies: ["HTML5", "CSS3", "JavaScript", "MySQL"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "AJAX", "MySQL"],
     githubUrl: "https://github.com/MattiaGallucci/GGJewelry"
   },
   {
