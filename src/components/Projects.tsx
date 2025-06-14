@@ -10,11 +10,11 @@ const projects = [
     period: "2025 - in corso",
     description: "Studio e sperimentazione di soluzioni basate su modelli linguistici di grandi dimensioni (LLM) per l'identificazione automatica di vulnerabilità nei contratti intelligenti.",
     fullDescription: "Questo progetto di tirocinio rappresenta un'esplorazione all'avanguardia nell'intersezione tra intelligenza artificiale e sicurezza blockchain. L'obiettivo è sviluppare un sistema automatizzato che utilizzi modelli linguistici avanzati per analizzare il codice dei smart contracts e identificare potenziali vulnerabilità di sicurezza. Il progetto combina tecniche di natural language processing, analisi statica del codice e machine learning per creare uno strumento che possa assistere gli sviluppatori nella creazione di contratti più sicuri e affidabili.",
-    tags: ["AI", "Blockchain", "Cybersecurity", "NLP", "Machine Learning"],
+    tags: ["AI", "Blockchain", "Cybersecurity", "LLM", "RAG"],
     status: "in-corso",
     image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-purple-500 to-pink-500",
-    technologies: ["Python", "Solidity", "TensorFlow", "Transformers", "Web3"],
+    technologies: ["Python", "PyMuPDF", "Ollama", "NumPy", "RAG"],
     githubUrl: "https://github.com/MattiaGallucci/tirocinio"
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     collaborators: ["Choaib Goumri"],
     image: "https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&cs=tinysrgb&w=800",
     gradient: "from-green-500 to-blue-500",
-    technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Flask"],
+    technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Seaborn"],
     githubUrl: "https://github.com/MattiaGallucci/GoalGuru"
   },
   {
