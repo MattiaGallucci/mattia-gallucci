@@ -55,7 +55,7 @@ Cordiali saluti,
               <div>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg mb-8">
                   Che si tratti di collaborazioni, opportunità di stage, progetti di ricerca o semplicemente per uno scambio di idee, 
-                  sarò felice di confrontarmi. Clicca il pulsante qui sotto per inviarmi una email — sarà mia premura rispondere il prima possibile.
+                  sarò felice di confrontarmi. Clicca il pulsante qui sotto per inviarmi una email - sarà mia premura rispondere il prima possibile.
                 </p>
               </div>
 
